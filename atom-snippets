@@ -1,0 +1,290 @@
+'*':
+  'Reusable':
+    'prefix': 'reusable',
+    'body': """
+     ${1:[[S51:]]}
+    """
+
+  'Donation Form Conditional':
+    'prefix': 'd-condish'
+    'body': """
+     ${1:[[?x16040x16041x::x[[S334:df_id]]x:: ::]]}
+    """
+   'Donation Form Thank You Conditional':
+    'prefix': 'd-condish-ty'
+    'body': """
+     ${1:[[?[[S8]]::donation=completed:: :: ]]}
+    """
+   'First Name Conditional':
+    'prefix': 'condish-name'
+    'body': """
+     ${1:[[?xx::x[[S1:first_name]]x::Dear Friend,::Dear [[S1:first_name]],]]}
+    """
+'.text.html.basic':
+    'Spacer-25':
+      'prefix': 'spacer-25',
+      'body': """
+      <!-- BLOCK: begin 25px spacer -->
+        <table style="border-collapse: collapse;"><tr><td style="padding: 0;"><img src="https://secure3.convio.net/humane/images/content/pagebuilder/transparent-spacer-25.png" alt="HSUS" height="25px"></td></tr></table>
+      <!-- BLOCK: end 25px spacer -->
+      """
+    'table-spacer-25':
+      'prefix': 'table-spacer-25',
+      'body': """
+      <!-- BLOCK: begin 25px spacer -->
+          <table border="0" cellpadding="0" cellspacing="0"><tr><td width="3"><table border="0" cellpadding="0" cellspacing="0"><tr><td style="font-size: 25px; line-height: 25px;">&nbsp;</td></tr></table></td></tr></table>
+      <!-- BLOCK: end 25px spacer -->
+      """
+    'Spacer-15':
+        'prefix': 'spacer-15',
+        'body': """
+        <!-- BLOCK: begin 15px spacer -->
+          <table style="border-collapse: collapse;"><tr><td style="padding: 0;"><img src="https://secure3.convio.net/humane/images/content/pagebuilder/transparent-spacer-15.png" alt="HSUS" height="15px"></td></tr></table>
+        <!-- BLOCK: end 15px spacer -->
+        """
+    'Spacer-2':
+        'prefix': 'spacer-2',
+        'body': """
+        <!-- BLOCK: begin 2px spacer -->
+          <table style="border-collapse: collapse;"><tr><td style="padding: 0;"><img src="https://secure3.convio.net/humane/images/content/pagebuilder/spacer-2.png" alt="HSUS" height="2px"></td></tr></table>
+        <!-- BLOCK: end 2px spacer -->
+        """
+    'textblock-large':
+       'prefix': 'textblock-large',
+       'body': """
+       <!-- BLOCK: begin textblock-large -->
+         <table cellpadding="0" cellspacing="0" width="90%" align="center" style="margin: 0px auto;">
+           <tr>
+             <td style="text-align: center; background-color:#ffffff; font-size: 18px; line-height: 23px; font-family:Arial, Helvetica, sans-serif;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a style="color: #a71930; text-decoration: underline; font-family: sans-serif; font-size: 18px; line-height: 23px; font-weight: bold;" href="http://www.humanesociety.org" /> incididunt ut labore</a> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             </td>
+           </tr>
+         </table>
+       <!-- BLOCK: end textblock-large -->
+     """
+    'textblock-small':
+       'prefix': 'textblock-small',
+       'body': """
+       <!-- BLOCK: begin textblock-small -->
+          <table cellpadding="0" cellspacing="0" width="90%" align="center" style="margin: 0px auto;">
+            <tr>
+              <td style="text-align: left; background-color:#ffffff; font-size: 14px; line-height: 18px; font-family:Arial, Helvetica, sans-serif;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <a style="color: #a71930; text-decoration: underline; font-family: sans-serif; font-size: 14px; line-height: 18px; font-weight: bold;" href="http://www.humanesociety.org" /> incididunt ut labore</a> et dolore magna aliqua.
+                <br /><br />
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </td>
+            </tr>
+          </table>
+        <!-- BLOCK: end textblock-small -->
+     """
+    'image-full':
+       'prefix': 'image-full',
+       'body': """
+       <!-- BLOCK: begin image-full -->
+          <table cellpadding="0" cellspacing="0" width="100%" align="center" style="margin: 0px auto;">
+            <tr>
+              <td style="text-align: center;">
+                <a href="http://www.humanesociety.org"><img src="https://secure3.convio.net/humane/images/content/pagebuilder/email-feature-dog-thanks-action.jpg" alt="HSUS" width="560"></a>
+              </td>
+            </tr>
+          </table>
+       <!-- BLOCK: end image-full -->
+     """
+    'image-small':
+       'prefix': 'image-small',
+       'body': """
+       <!-- BLOCK: begin image-small -->
+          <table cellpadding="0" cellspacing="0" width="90%" align="center" style="margin: 0px auto;">
+            <tr>
+              <td style="text-align: center;">
+                <a href="http://www.humanesociety.org"><img src="https://secure3.convio.net/humane/images/content/pagebuilder/email-feature-dog-thanks-action.jpg" alt="HSUS" width="100%"></a>
+              </td>
+            </tr>
+          </table>
+       <!-- BLOCK: end image-small -->
+     """
+    'view-online':
+       'prefix': 'view-online',
+       'body': """
+       <!-- BLOCK: begin view-online -->
+          <table cellpadding="0" cellspacing="0" width="100%" align="center" style="margin: 0px auto;">
+           <tr class="view_online">
+             <td class="email_link_viewonline" valign="top" style="text-align:center;">
+             <a style="font-family: Arial, Helvetica, sans-serif; font-size: 9px; color:#666666; line-height: 12px;" href="http://action.humanesociety.org/site/MessageViewer" target="_blank">View in browser.</a>
+             </td>
+           </tr>
+          </table>
+       <!-- BLOCK: end view-online -->
+     """
+    'logo':
+       'prefix': 'logo',
+       'body': """
+       <!-- BLOCK: begin logo -->
+         <table cellpadding="0" cellspacing="0" align="center" width="auto">
+           <tr>
+             <td>
+               <a style="display: inline-block;" href="https://secure.humanesociety.org/site/SPageServer/?pagename=welcome_landing&s_pV=21&s_pA=1&autologin=true&s_src=em_welcome-series_email1_advo_021317"><img src="https://secure3.convio.net/humane/images/content/pagebuilder/hsus-logo-354x81.png" alt="HSUS" width="180"></a>
+             </td>
+           </tr>
+         </table>
+       <!-- BLOCK: end logo -->
+     """
+    'message-table':
+       'prefix': 'message-table',
+       'body': """
+       <!-- BLOCK: begin message-table -->
+         <table width="560" cellspacing="0" cellpadding="0" align="center" border="0" style="margin: 0px auto; background-color: #ffffff;">
+           <tr>
+             <td>
+
+             </td>
+           </tr>
+          </table>
+       <!-- BLOCK: end message-table -->
+     """
+    'page-table':
+       'prefix': 'page-table',
+       'body': """
+       <!-- BLOCK: begin page-table -->
+         <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" style="background-color:#EEEEEE;">
+           <tr>
+             <td>
+
+             </td>
+           </tr>
+          </table>
+        <!-- BLOCK: end page-table -->
+     """
+    'footer':
+       'prefix': 'footer',
+       'body': """
+       <!-- BLOCK: begin footer -->
+          <table width="560" cellspacing="0" cellpadding="0" align="center" border="0" style="margin: 0px auto;">
+            <tr>
+              <td>
+                <p style="margin-left: 5px; margin-right: 5px; font-family: Verdana,Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: #888888;">&copy; 2017 The Humane Society of the United States | All rights reserved | 1255 23rd Street, NW, Suite 450 | Washington, DC 20037 | <a style="color: #888888; text-decoration: underline;" href="mailto:donorcare@humanesociety.org" target="_blank">donorcare@humanesociety.org</a> | <a href="tel:2024521100" style="text-decoration:none;border:none;color:#888888;">202-452-1100</a> | <a style="color: #888888; text-decoration: underline;" href="http://www.humanesociety.org" target="_blank">humanesociety.org</a>
+                <br /><br />
+                <a style="color: #888888; text-decoration: underline;" href="http://action.humanesociety.org/site/CO">Unsubscribe</a> | <a style="color: #888888; text-decoration: underline;" href="http://www.humanesociety.org/privacy.html">Privacy Policy</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        <!-- BLOCK: end footer -->
+     """
+    'events-1':
+       'prefix': 'events-1',
+       'body': """
+       <!-- BLOCK: begin events-1 -->
+          <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
+            <tr>
+              <td align="center" style="text-align: center; font-family: sans-serif; font-size: 14px; line-height: 18px;">
+                <strong>Humane Lobby Day in Salt Lake City, Utah</strong><br>
+                Tuesday, February 7<br>
+                9:30 a.m. to 12:15 p.m.<br><br>
+              </td>
+            </tr>
+          </table>
+       <!-- BLOCK: end events-1 -->
+     """
+    'events-2':
+       'prefix': 'events-2',
+       'body': """
+       <!-- BLOCK: begin events-2 -->
+          <table cellspacing="0" cellpadding="0" border="0" width="75%" align="center">
+            <tr>
+              <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="45%" align="center" style="float: left;">
+                  <tr>
+                    <td align="center" style="text-align: center; font-family: sans-serif; font-size: 14px; line-height: 18px;">
+                    <strong>Humane Lobby Day in Salt Lake City, Utah</strong><br>
+                    Tuesday, February 7<br>
+                    9:30 a.m. to 12:15 p.m.<br><br>
+                    </td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" width="45%" align="center" style="float: right;">
+                  <tr>
+                    <td align="center" style="text-align: center; font-family: sans-serif; font-size: 14px; line-height: 18px;">
+                    <strong>Humane Lobby Day in Salt Lake City, Utah</strong><br>
+                    Tuesday, February 7<br>
+                    9:30 a.m. to 12:15 p.m.<br><br>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+       <!-- BLOCK: end events-2 -->
+     """
+    'button-rsvp':
+       'prefix': 'button-rsvp',
+       'body': """
+       <!-- BLOCK: begin button-rsvp -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin: 0px auto;" align="center">
+            <tr>
+             <td valign="top" style="text-align: center;">
+               <a href="http://www.humanesociety.org"><img src="https://secure3.convio.net/humane/images/content/pagebuilder/button-rsvp.png" width="160" alt="RSVP" align="center"></a>
+             </td>
+           </tr>
+          </table>
+       <!-- BLOCK: end button-rsvp -->
+     """
+
+
+'.source.json':
+  'Atom Snippet':
+    prefix: 'snip'
+    body: """
+      {
+        "${1:.source.js}": {
+          "${2:Snippet Name}": {
+            "prefix": "${3:Snippet Trigger}",
+            "body": "${4:Hello World!}"
+          }
+        }
+      }$5
+    """
+
+  'Atom Snippet With No Selector':
+    prefix: 'snipns'
+    body: """
+      "${1:Snippet Name}": {
+        "prefix": "${2:Snippet Trigger}",
+        "body": "${3:Hello World!}"
+      }$4
+    """
+
+  'Atom Keymap':
+    prefix: 'key'
+    body: """
+      {
+        "${1:body}": {
+          "${2:cmd}-${3:i}": "${4:namespace}:${5:event}"
+        }
+      }$6
+    """
+
+'.source.coffee':
+  'Atom Snippet':
+    prefix: 'snip'
+    body: """
+      '${1:.source.js}':
+        '${2:Snippet Name}':
+          'prefix': '${3:Snippet Trigger}'
+          'body': '${4:Hello World!}'$5
+    """
+
+  'Atom Snippet With No Selector':
+    prefix: 'snipns'
+    body: """
+      '${1:Snippet Name}':
+        'prefix': '${2:Snippet Trigger}'
+        'body': '${3:Hello World!}'$4
+    """
+
+  'Atom Keymap':
+    prefix: 'key'
+    body: """
+      '${1:body}':
+        '${2:cmd}-${3:i}': '${4:namespace}:${5:event}'$6
+    """
